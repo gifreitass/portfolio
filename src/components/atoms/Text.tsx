@@ -1,6 +1,6 @@
-const Text: React.FC<{ children: string }> = (props) => {
+const Text: React.FC<{ children: React.ReactNode }> = (props) => {
     return (
-        <span className="text-lg text-white">{props.children}</span>
+        <span className="w-2/5 text-lg text-white">{props.children}</span>
     )
 }
 
