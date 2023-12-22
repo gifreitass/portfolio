@@ -1,5 +1,6 @@
 import Hero from "../organisms/Hero"
 import NavBar from "../organisms/NavBar"
+import ProjectsSection from "../organisms/ProjectsSection"
 import Skills from "../organisms/Skills"
 
 const HomePage: React.FC = () => {
@@ -10,6 +11,7 @@ const HomePage: React.FC = () => {
                 <Hero />
                 <div className="w-full mt-28 h-0.5 bg-pink-300" />
                 <Skills />
+                <ProjectsSection />
             </main>
         </>
     )
