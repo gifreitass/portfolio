@@ -1,10 +1,11 @@
+import ProjectImage from "../atoms/ProjectImage"
 import Text from "../atoms/Text"
 import Title from "../atoms/Title"
 
-const Project: React.FC<{ image: string }> = (props) => {
+const Project: React.FC<{ link: string, image: string, description: string }> = (props) => {
     return (
         <div>
-            <img className="mt-12 h-4/5" src={props.image} />
+            <ProjectImage image={props.image} link={props.link} description={props.description} />
             <Title size="text-lg">MOVIE STREAMING PROJECT</Title>
             <Text>TYPESCRIPT</Text>
         </div>
