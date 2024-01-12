@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={` bg-zinc-900 ${mainFontFamily.className}`}>{children}</body>
+      <body className={`mx-36 my-8 ${mainFontFamily.className}`}>{children}</body>
     </html>
   )
 }
