@@ -1,4 +1,11 @@
+"use client"
+import { useMousePosition } from "@/hooks/useMousePosition"
+
 const Background: React.FC = () => {
+    const position = useMousePosition()
+    console.log(position)
+    //passar o x e y do mouse como props para o interactive,
+
     return (
         <div className="gradient-bg">
             <div className="gradients-container">
@@ -7,6 +14,7 @@ const Background: React.FC = () => {
                 <div className="g3"></div>
                 <div className="g4"></div>
                 <div className="g5"></div>
+                <div className="interactive"></div>
             </div>
         </div>
     )
