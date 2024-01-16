@@ -7,9 +7,9 @@ import Skills from "../organisms/Skills"
 const HomePage: React.FC = () => {
     return (
         <>
-            <Background />
+            <div className="absolute w-screen h-screen bg-[#F249F2] bg-[radial-gradient(ellipse_farthest-side_at_bottom_center,_#F249F2_0%,_#EDDBB2_100%)]"></div>
             <NavBar />
-            <main className="mt-24">
+            <main className="mx-36 my-8 relative mt-24">
                 <Hero />
                 <div className="w-full mt-28 h-0.5 bg-pink-300" />
                 <Skills />
