@@ -1,3 +1,4 @@
+import DivisionBar from "../atoms/DivisionBar"
 import Background from "../organisms/Background"
 import Hero from "../organisms/Hero"
 import NavBar from "../organisms/NavBar"
@@ -9,10 +10,11 @@ const HomePage: React.FC = () => {
         <>
             <div className="absolute w-screen h-screen bg-[#F249F2] bg-[radial-gradient(ellipse_farthest-side_at_bottom_center,_#F249F2_0%,_#EDDBB2_100%)]"></div>
             <NavBar />
-            <main className="mx-36 my-8 relative mt-24">
+            <main className="mx-48 my-8 relative mt-24">
                 <Hero />
-                <div className="w-full mt-28 h-0.5 bg-pink-300" />
+                <DivisionBar />
                 <Skills />
+                <DivisionBar />
                 <ProjectsSection />
             </main>
         </>

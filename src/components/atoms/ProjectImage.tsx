@@ -1,6 +1,6 @@
-const ProjectImage: React.FC<{ link: string, image: string, description: string }> = (props) => {
+const ProjectImage: React.FC<{ image: string, description: string }> = (props) => {
     return (
-        <a target="_blank" href={props.link}><img className="mt-12 h-4/5" src={props.image} alt={props.description} /></a>
+        <img className="w-1/2" src={props.image} alt={props.description} />
     )
 }
 
