@@ -2,7 +2,7 @@ import SkillItem from "../molecules/SkillItem"
 
 const Skills = () => {
     return (
-        <section className="mt-24 grid grid-cols-4 gap-x-36 gap-y-7">
+        <section className="mt-40 grid grid-cols-4 gap-x-36 gap-y-7">
             <SkillItem logo="images/html-5.png">HTML</SkillItem>
             <SkillItem logo="images/css-3.png">CSS</SkillItem>
             <SkillItem logo="images/javascript.png">JavaScript</SkillItem>

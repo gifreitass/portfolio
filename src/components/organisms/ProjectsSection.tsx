@@ -5,8 +5,8 @@ import RightProject from "../molecules/RightProject"
 
 const ProjectsSection = () => {
     return (
-        <section className="mt-32">
-            <div className="flex flex-col gap-28">
+        <section className="mt-24">
+            <div className="flex flex-col gap-24">
                 <RightProject text="Projeto para exibição de filmes utilizando a API DronaHQ" descriptionImage="movie streaming project cover" link="https://movie-streaming-project.vercel.app/" image="images/watchflix.png" />
                 <LeftProject text="Criação de uma página de formulário com diversos passos e opções de personalização" descriptionImage="multi step form project cover" link="https://multi-step-form-lake.vercel.app/" image="images/multistep.png" />
             </div>
