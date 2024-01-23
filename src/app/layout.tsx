@@ -1,3 +1,5 @@
+'use client'
+import ScrollUpButton from '@/components/atoms/ScrollUpButton'
 import {Space_Grotesk} from 'next/font/google'
 
 const mainFontFamily = Space_Grotesk({
@@ -10,9 +12,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="en">
-      <body className={`${mainFontFamily.className}`}>{children}</body>
+      <body className={`${mainFontFamily.className}`}>
+      <ScrollUpButton />
+      {children}
+      </body>
     </html>
   )
 }

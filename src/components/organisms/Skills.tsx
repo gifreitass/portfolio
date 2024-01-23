@@ -1,8 +1,9 @@
+import { RefObject } from "react"
 import SkillItem from "../molecules/SkillItem"
 
-const Skills = () => {
+const Skills: React.FC<{ ref: RefObject<HTMLElement> }> = (props) => {
     return (
-        <section className="mt-40 grid grid-cols-4 gap-x-36 gap-y-7">
+        <section ref={props.ref} className="mt-40 grid grid-cols-4 gap-x-36 gap-y-7">
             <SkillItem logo="images/html-5.png">HTML</SkillItem>
             <SkillItem logo="images/css-3.png">CSS</SkillItem>
             <SkillItem logo="images/javascript.png">JavaScript</SkillItem>
