@@ -1,6 +1,6 @@
 const DivisionBar: React.FC = () => {
     return (
-        <div className="w-full mt-28 h-0.5 bg-pink-300" />
+        <div className="mt-28 mx-48 h-0.5 bg-teal-500" />
     )
 }
 

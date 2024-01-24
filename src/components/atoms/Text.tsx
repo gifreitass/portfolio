@@ -1,6 +1,6 @@
-const Text: React.FC<{ children: React.ReactNode }> = (props) => {
+const Text: React.FC<{ children: React.ReactNode, margin?: string, size: string }> = (props) => {
     return (
-        <span className="text-4x1 drop-shadow-md">{props.children}</span>
+        <span className={`${props.size} drop-shadow-xl ${props.margin}`}>{props.children}</span>
     )
 }
 

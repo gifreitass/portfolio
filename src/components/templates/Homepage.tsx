@@ -5,6 +5,7 @@ import ScrollDownButton from "../atoms/ScrollDownButton"
 import Hero from "../organisms/Hero"
 import ProjectsSection from "../organisms/ProjectsSection"
 import Skills from "../organisms/Skills"
+import Footer from "../organisms/Footer"
 
 const HomePage: React.FC = () => {
     const skills = useRef(null)
@@ -16,6 +17,7 @@ const HomePage: React.FC = () => {
                 <Skills ref={skills} />
                 <DivisionBar />
                 <ProjectsSection />
+                <Footer />
             </main>
         </>
     )

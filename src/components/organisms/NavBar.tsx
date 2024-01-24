@@ -3,8 +3,7 @@ import NavItems from "../molecules/NavItems"
 
 const NavBar = () => {
     return (
-        <nav className="text-white mx-48 pt-8 flex justify-between">
-            <Title size="text-2xl">gi freitas</Title>
+        <nav className="text-white mx-48 pt-12 flex justify-between">
             <NavItems />
         </nav>
     )

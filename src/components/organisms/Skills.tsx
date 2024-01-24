@@ -1,9 +1,10 @@
 import { RefObject, forwardRef } from "react"
 import SkillItem from "../molecules/SkillItem"
 
+//deixar props mesmo se não usar?
 const Skills = forwardRef((props, ref) => {
     return (
-        <section ref={ref as RefObject<HTMLElement>} className="mx-48 grid grid-cols-4 gap-x-36 gap-y-7">
+        <section ref={ref as RefObject<HTMLElement>} className="mx-48 grid grid-cols-4 gap-x-36 gap-y-6">
             <SkillItem logo="images/html-5.png">HTML</SkillItem>
             <SkillItem logo="images/css-3.png">CSS</SkillItem>
             <SkillItem logo="images/javascript.png">JavaScript</SkillItem>
