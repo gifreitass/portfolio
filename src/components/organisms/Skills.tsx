@@ -1,9 +1,9 @@
-import { RefObject } from "react"
+import { RefObject, forwardRef } from "react"
 import SkillItem from "../molecules/SkillItem"
 
-const Skills: React.FC<{ ref: RefObject<HTMLElement> }> = (props) => {
+const Skills = forwardRef((props, ref) => {
     return (
-        <section ref={props.ref} className="mt-40 grid grid-cols-4 gap-x-36 gap-y-7">
+        <section ref={ref as RefObject<HTMLElement>} className="mx-48 grid grid-cols-4 gap-x-36 gap-y-7">
             <SkillItem logo="images/html-5.png">HTML</SkillItem>
             <SkillItem logo="images/css-3.png">CSS</SkillItem>
             <SkillItem logo="images/javascript.png">JavaScript</SkillItem>
@@ -13,6 +13,6 @@ const Skills: React.FC<{ ref: RefObject<HTMLElement> }> = (props) => {
             <SkillItem logo="images/tailwind.png">TailwindCSS</SkillItem>
         </section>
     )
-}
+})
 
 export default Skills

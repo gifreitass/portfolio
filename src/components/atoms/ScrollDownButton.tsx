@@ -1,7 +1,7 @@
 const ScrollDownButton: React.FC<{ onClick: any }> = (props) => {
 
     return (
-        <img onClick={props.onClick} className="w-14 mx-auto mt-10 cursor-pointer drop-shadow-lg" src="images/down-arrow.png" alt="down arrow" />
+        <img onClick={props.onClick} className="w-14 mx-auto mt-44 cursor-pointer drop-shadow-lg hover:-translate-y-1 hover:scale-110 duration-300" src="images/down-arrow.png" alt="down arrow" />
     )
 }
 
