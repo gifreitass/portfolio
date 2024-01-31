@@ -3,7 +3,7 @@ import Title from "../atoms/Title"
 
 const Footer = () => {
     return (
-        <footer className="bg-teal-950 w-full h-[30vh] mt-16 text-white flex pt-10 gap-6">
+        <footer className="bg-teal-950 w-full h-[30vh] mt-20 text-white flex pt-10 gap-6">
             <div className="flex flex-col gap-6">
                 <Text margin="mx-48" size="text-lg">Obrigada por chegar até aqui :)</Text>
                 <div className="mx-48 flex flex-col gap-2">
