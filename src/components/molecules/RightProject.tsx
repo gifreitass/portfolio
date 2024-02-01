@@ -8,7 +8,7 @@ const RightProject: React.FC<{ link: string, image: string, descriptionImage: st
     const { link, image, descriptionImage, text, title, technologies } = props
 
     return (
-        <div className="flex gap-10">
+        <div className="flex flex-col md:flex-row gap-10">
             <ProjectImage image={image} description={descriptionImage} />
             <div className="flex flex-col gap-y-8 justify-center">
                 <Title size="text-2xl">{title}</Title>

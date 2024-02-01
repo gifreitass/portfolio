@@ -18,11 +18,11 @@ const Hero: React.FC<{ skillsRef: RefObject<HTMLElement> }> = (props) => {
     }
 
     return (
-        <section className="w-full h-screen text-white flex flex-col gap-12 relative">
+        <section className="w-full h-screen text-white flex flex-col gap-28 relative ">
             <Background />
             <NavBar />
-            <Title margin="mx-48 mt-32" size='text-6xl'><UnderlinedText>Giovanna de Freitas</UnderlinedText></Title>
-            <Text size="text-xl" margin="mx-48">estudante de Desenvolvimento Web Front-end.</Text>
+            <Title margin="mx-12 mt-12 md:mx-48" size='text-5xl md:text-6xl'><UnderlinedText>Giovanna de Freitas</UnderlinedText></Title>
+            <Text size="text-xl" margin="mx-12 md:mx-48">estudante de Desenvolvimento Web Front-end.</Text>
             <ScrollDownButton onClick={scrollToSection} />
         </section>
     )

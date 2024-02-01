@@ -5,7 +5,7 @@ import RightProject from "../molecules/RightProject"
 
 const ProjectsSection = () => {
     return (
-        <section className="mt-24 mx-48">
+        <section className="mt-24 mx-12 md:mx-48">
             <div className="flex flex-col gap-24">
                 <RightProject title="MOVIE STREAMING PROJECT"
                     text="Site desenvolvido para exibição de filmes utilizando a API do Movie Data Base. O projeto possui página inicial, página de top filmes, filmes recentes e favoritos."
