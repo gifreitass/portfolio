@@ -17,7 +17,7 @@ const RightProject: React.FC<{ link: string, image: string, descriptionImage: st
                         return <InfoButton key={key}>{technology}</InfoButton>
                     })}
                 </div>
-                <Text size="text-lg">{text}</Text>
+                <Text size="text-base md:text-lg">{text}</Text>
                 <Button link={link}>VISUALIZAR PROJETO ➜</Button>
             </div>
         </div>

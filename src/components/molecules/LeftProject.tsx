@@ -8,7 +8,7 @@ const LeftProject: React.FC<{ link: string, image: string, descriptionImage: str
     const { link, image, descriptionImage, text, title, technologies } = props
 
     return (
-        <div className="flex gap-10">
+        <div className="flex flex-col md:flex-row gap-10">
             <div className="flex flex-col gap-y-8 justify-center">
                 <Title size="text-2xl">{title}</Title>
                 <div className="flex flex-wrap gap-7">
@@ -16,7 +16,7 @@ const LeftProject: React.FC<{ link: string, image: string, descriptionImage: str
                         return <InfoButton key={key}>{technology}</InfoButton>
                     })}
                 </div>
-                <Text size="text-lg">{text}</Text>
+                <Text size="text-base md:text-lg">{text}</Text>
                 <Button link={link}>VISUALIZAR PROJETO ➜</Button>
             </div>
             <ProjectImage image={image} description={descriptionImage} />

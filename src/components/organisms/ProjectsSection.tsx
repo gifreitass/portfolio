@@ -25,7 +25,7 @@ const ProjectsSection = () => {
                     link="https://weather-project-app-eight.vercel.app/"
                     image="images/weather.png"
                     technologies={['REACTJS', 'TYPESCRIPT', 'STYLED COMPONENTS', 'REDUX']} />
-                <div className="m-auto text-lg animate-pulse">NEW PROJECTS COMING SOON...</div>
+                <div className="m-auto text-base md:text-lg animate-pulse">NEW PROJECTS COMING SOON...</div>
             </div>
         </section>
     )

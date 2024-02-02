@@ -1,7 +1,6 @@
 'use client'
-import { RefObject, useRef } from "react"
+import { useRef } from "react"
 import DivisionBar from "../atoms/DivisionBar"
-import ScrollDownButton from "../atoms/ScrollDownButton"
 import Hero from "../organisms/Hero"
 import ProjectsSection from "../organisms/ProjectsSection"
 import Skills from "../organisms/Skills"

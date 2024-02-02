@@ -18,7 +18,7 @@ const Hero: React.FC<{ skillsRef: RefObject<HTMLElement> }> = (props) => {
     }
 
     return (
-        <section className="w-full h-screen text-white flex flex-col gap-28 relative ">
+        <section className="w-full h-screen text-white flex flex-col gap-20 relative ">
             <Background />
             <NavBar />
             <Title margin="mx-12 mt-12 md:mx-48" size='text-5xl md:text-6xl'><UnderlinedText>Giovanna de Freitas</UnderlinedText></Title>
