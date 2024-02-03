@@ -8,16 +8,16 @@ const RightProject: React.FC<{ link: string, image: string, descriptionImage: st
     const { link, image, descriptionImage, text, title, technologies } = props
 
     return (
-        <div className="flex flex-col md:flex-row gap-10">
+        <div className="flex flex-col lg:flex-row items-center gap-10">
             <ProjectImage image={image} description={descriptionImage} />
             <div className="flex flex-col gap-y-8 justify-center">
                 <Title size="text-2xl">{title}</Title>
-                <div className="flex flex-wrap gap-7">
+                <div className="flex flex-wrap gap-4 sm:gap-7 md:gap-4">
                     {technologies.map((technology, key) => {
                         return <InfoButton key={key}>{technology}</InfoButton>
                     })}
                 </div>
-                <Text size="text-base md:text-lg">{text}</Text>
+                <Text size="text-base sm:text-lg">{text}</Text>
                 <Button link={link}>VISUALIZAR PROJETO ➜</Button>
             </div>
         </div>

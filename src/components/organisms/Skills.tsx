@@ -4,7 +4,7 @@ import SkillItem from "../molecules/SkillItem"
 //deixar props mesmo se não usar?
 const Skills = forwardRef((props, ref) => {
     return (
-        <section ref={ref as RefObject<HTMLElement>} className="mx-12 md:mx-48 grid grid-cols-2 md:grid-cols-4 gap-x-20 md:gap-x-36 gap-y-6">
+        <section ref={ref as RefObject<HTMLElement>} className="mx-12 sm:mx-20 md:mx-36 lg:mx-48 grid grid-cols-2 lg:grid-cols-4 gap-x-20 md:gap-x-36 md:gap-y-6">
             <SkillItem logo="images/html-5.png">HTML</SkillItem>
             <SkillItem logo="images/css-3.png">CSS</SkillItem>
             <SkillItem logo="images/javascript.png">JavaScript</SkillItem>

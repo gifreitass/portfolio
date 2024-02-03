@@ -5,7 +5,7 @@ import RightProject from "../molecules/RightProject"
 
 const ProjectsSection = () => {
     return (
-        <section className="mt-24 mx-12 md:mx-48">
+        <section className="mt-24 mx-12 sm:mx-20 md:mx-28 lg:mx-48">
             <div className="flex flex-col gap-24">
                 <RightProject title="MOVIE STREAMING PROJECT"
                     text="Site desenvolvido para exibição de filmes utilizando a API do Movie Data Base. O projeto possui página inicial, página de top filmes, filmes recentes e favoritos."
@@ -25,7 +25,7 @@ const ProjectsSection = () => {
                     link="https://weather-project-app-eight.vercel.app/"
                     image="images/weather.png"
                     technologies={['REACTJS', 'TYPESCRIPT', 'STYLED COMPONENTS', 'REDUX']} />
-                <div className="m-auto text-base md:text-lg animate-pulse">NEW PROJECTS COMING SOON...</div>
+                <div className="m-auto text-base sm:text-lg md:text-xl animate-pulse">NEW PROJECTS COMING SOON...</div>
             </div>
         </section>
     )
