@@ -1,21 +1,12 @@
 import React, { useEffect, useState } from "react";
 import ProjectImage from "../atoms/ProjectImage"
 import ProjectInfos from "./ProjectInfos"
+import useMobile from "@/hooks/useMobile";
 
 const LeftProject: React.FC<{ link: string, image: string, descriptionImage: string, text: string, title: string, technologies: string[] }> = (props) => {
     const { link, image, descriptionImage, text, title, technologies } = props
-    const [isMobile, setIsMobile] = useState(false);
 
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 1028);
-        };
-        handleResize();
-        window.addEventListener("resize", handleResize);
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
+    const isMobile = useMobile()
 
     return (
         isMobile ? <div className="flex flex-col lg:flex-row items-center gap-10">

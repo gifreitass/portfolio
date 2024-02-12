@@ -1,18 +1,7 @@
-import { useEffect, useState } from "react";
+import useMobile from "@/hooks/useMobile";
 
 const Background: React.FC = () => {
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 768);
-        };
-        handleResize();
-        window.addEventListener("resize", handleResize);
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
+    const isMobile = useMobile()
 
     const videoSource = isMobile ? "videos/seaMobile.mp4" : "videos/sea.mp4";
     return (

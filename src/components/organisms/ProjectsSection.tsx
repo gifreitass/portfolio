@@ -1,5 +1,3 @@
-import DivisionBar from "../atoms/DivisionBar"
-import Title from "../atoms/Title"
 import LeftProject from "../molecules/LeftProject"
 import RightProject from "../molecules/RightProject"
 
